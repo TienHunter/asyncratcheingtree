@@ -48,11 +48,11 @@ class MessageClientTest {
         assertEquals(plainMsg, decrypted);
 
         duke.receiveMessage(message);
-        String anotherMsg = duke.sendMessage(0, "Hê hê");
+        String anotherMsg = duke.sendMessage(0, "Good night");
 
         String anotherDecrypted = bob.receiveMessage(anotherMsg);
 //        System.out.println(anotherDecrypted);
-        assertEquals("Hê hê", anotherDecrypted);
+        assertEquals("Good night", anotherDecrypted);
 
 //         String newSetupMsg = admin.removeMember(0, "bob");
 //         System.out.println("setUpMsg: " + setupMsg);
